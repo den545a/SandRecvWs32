@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\modules\MODULES.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\exploit\FakeLagLowPoint.cpp">
+      <Filter>src\modules\exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\visual\GUI.cpp">
+      <Filter>src\modules\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\other\AntiScreen.cpp">
+      <Filter>src\modules\other</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="glad\src\gl.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_draw.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\backends\imgui_impl_opengl3.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\backends\imgui_impl_win32.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\misc\cpp\imgui_stdlib.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_tables.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_widgets.cpp">
+      <Filter>trash</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>trash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\modules.h">
+      <Filter>src\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\exploit\FakeLagLowPoint.h">
+      <Filter>src\modules\exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\visual\gui.h">
+      <Filter>src\modules\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\AntiScreen.h">
+      <Filter>src\modules\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object\Counts.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\consts.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\includes.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\browser.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\buffer.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\displaylist.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fgl.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fglu.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fglut.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\gizmo.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glad\include\gl.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glew.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glsmap.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glut.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glxew.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\hde32.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\hde64.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\hslider.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imconfig.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imgui.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\misc\freetype\imgui_freetype.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_opengl3.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_opengl3_loader.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_win32.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imgui_internal.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\misc\cpp\imgui_stdlib.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_rectpack.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_textedit.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_truetype.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glad\include\khr\khrplatform.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\minhook.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\mui.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\pstdint.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\table32.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\table64.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\textlist.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\trampoline.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\tube.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\uicolor.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\vslider.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\wglew.h">
+      <Filter>trash</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xorstr.hpp">
+      <Filter>trash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{281c1e75-02fa-4d86-891f-bdd065a6b8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{aac6a1a8-74c0-4269-803d-c37dff75d7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\exploit">
+      <UniqueIdentifier>{83fdf651-325a-4cd3-83dc-8e9d096bdc4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\visual">
+      <UniqueIdentifier>{895e8326-dc2e-4a77-bb31-5af4d6cbeb84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\other">
+      <UniqueIdentifier>{00db4b15-db13-49e4-a140-d96c744712a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trash">
+      <UniqueIdentifier>{5f05cc5e-0b78-4878-b2ac-bd966f55db56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

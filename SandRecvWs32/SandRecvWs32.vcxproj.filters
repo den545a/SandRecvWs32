@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\minhook">
+      <UniqueIdentifier>{5359500d-8b84-436b-95f9-c0ee6824ff6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\minhook\include">
+      <UniqueIdentifier>{a200f401-c727-40f7-9bf7-8b6cddf28023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\minhook\src">
+      <UniqueIdentifier>{ea731906-15cc-430c-8741-91f79d4a3ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\minhook\include\hde">
+      <UniqueIdentifier>{b9672706-d5ad-44d3-8f5a-0a1e1f2d4b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\minhook\src\hde">
+      <UniqueIdentifier>{272c7d03-06bf-4557-95f6-228f25b11397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glad">
+      <UniqueIdentifier>{18730a44-1895-4026-ad2b-938c2f51eb76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glad\include">
+      <UniqueIdentifier>{272b3360-c451-4944-adb1-f33725b6ab09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glad\src">
+      <UniqueIdentifier>{4b953cb9-aab2-4fbf-bd5d-242c649fd469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glad\include\khr">
+      <UniqueIdentifier>{274871b4-67c9-4447-a804-027dfaea4c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui">
+      <UniqueIdentifier>{fe1060d5-980b-495c-9edc-0a066df30f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\include">
+      <UniqueIdentifier>{6ea65e8f-e0ce-4c7d-9363-d5f1ef158ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\include\misc">
+      <UniqueIdentifier>{e25d8dd6-80e8-4f0b-b9a0-0aa5135e8e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\include\misc\freetype">
+      <UniqueIdentifier>{b65305da-1c0a-48eb-bdc6-4e9beef8fa18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\include\misc\cpp">
+      <UniqueIdentifier>{71bd2bb2-0ff5-4e4b-9e03-12d891651cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\src">
+      <UniqueIdentifier>{46b057b5-92a4-4c89-92aa-121d755a24f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\src\misc">
+      <UniqueIdentifier>{21bb5d52-85ee-4de8-900e-f2b12450f288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\src\backends">
+      <UniqueIdentifier>{8ee3b626-e0e9-421a-85e0-d410bd311b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\src\misc\freetype">
+      <UniqueIdentifier>{f4c72fab-f549-41af-a20c-0b10e467773e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\src\misc\cpp">
+      <UniqueIdentifier>{525649ff-7649-4e09-9cb3-7d51914c577f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\imgui\include\backends">
+      <UniqueIdentifier>{e65b39ea-7f00-4b5b-9f5a-4d0e979ecf95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src">
+      <UniqueIdentifier>{aa09e3cd-3a4f-4a76-b16d-bc1e8215af38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\object">
+      <UniqueIdentifier>{884452f3-99f6-4b54-8f72-753b88ff75ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules">
+      <UniqueIdentifier>{c0629480-5dea-4f7d-aec1-047087d7c919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules\visual">
+      <UniqueIdentifier>{512f7d6b-6421-42df-a272-db9fcdd4bed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules\other">
+      <UniqueIdentifier>{ccab0d2d-2512-45e1-a784-07b87f473348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules\movement">
+      <UniqueIdentifier>{87b2f87c-b2ed-407b-95ef-87acd79c5d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules\exploit">
+      <UniqueIdentifier>{1244ee3d-67bb-4b9f-b040-21923d49e721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\modules\combat">
+      <UniqueIdentifier>{92d171e7-0f39-4b2f-ac96-8fbb028b2991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glut">
+      <UniqueIdentifier>{a0f22142-4828-4320-990a-f2d58e94cc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glut\include">
+      <UniqueIdentifier>{ae50d6c4-c475-458a-981b-de7e642a5af2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glut\lib">
+      <UniqueIdentifier>{646009a5-8ceb-4759-bdc3-f2aa8b2e113d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glut\include\GL">
+      <UniqueIdentifier>{b3f089d7-5b2a-436b-9bc8-0e710d762cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\glut\include\mui">
+      <UniqueIdentifier>{b649486d-e150-4d71-a588-464d7c039225}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="minhook\src\buffer.c">
+      <Filter>Исходные файлы\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hook.c">
+      <Filter>Исходные файлы\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\trampoline.c">
+      <Filter>Исходные файлы\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde32.c">
+      <Filter>Исходные файлы\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\src\hde\hde64.c">
+      <Filter>Исходные файлы\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="glad\src\gl.c">
+      <Filter>Исходные файлы\glad\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui.cpp">
+      <Filter>Исходные файлы\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_draw.cpp">
+      <Filter>Исходные файлы\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_tables.cpp">
+      <Filter>Исходные файлы\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\imgui_widgets.cpp">
+      <Filter>Исходные файлы\imgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\misc\cpp\imgui_stdlib.cpp">
+      <Filter>Исходные файлы\imgui\src\misc\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\backends\imgui_impl_opengl3.cpp">
+      <Filter>Исходные файлы\imgui\src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\src\backends\imgui_impl_win32.cpp">
+      <Filter>Исходные файлы\imgui\src\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\MODULES.cpp">
+      <Filter>Исходные файлы\src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\visual\GUI.cpp">
+      <Filter>Исходные файлы\src\modules\visual</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\exploit\FakeLagLowPoint.cpp">
+      <Filter>Исходные файлы\src\modules\exploit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\object\object.cpp">
+      <Filter>Исходные файлы\src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\movement\FlyHook.cpp">
+      <Filter>Исходные файлы\src\modules\movement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\other\AntiScreen.cpp">
+      <Filter>Исходные файлы\src\modules\other</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Исходные файлы\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="minhook\include\minhook.h">
+      <Filter>Исходные файлы\minhook\include</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\trampoline.h">
+      <Filter>Исходные файлы\minhook\include</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\buffer.h">
+      <Filter>Исходные файлы\minhook\include</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\hde64.h">
+      <Filter>Исходные файлы\minhook\include\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\pstdint.h">
+      <Filter>Исходные файлы\minhook\include\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\table32.h">
+      <Filter>Исходные файлы\minhook\include\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\table64.h">
+      <Filter>Исходные файлы\minhook\include\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\include\hde\hde32.h">
+      <Filter>Исходные файлы\minhook\include\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="glad\include\gl.h">
+      <Filter>Исходные файлы\glad\include</Filter>
+    </ClInclude>
+    <ClInclude Include="glad\include\khr\khrplatform.h">
+      <Filter>Исходные файлы\glad\include\khr</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imconfig.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imgui.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imgui_internal.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_rectpack.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_textedit.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\imstb_truetype.h">
+      <Filter>Исходные файлы\imgui\include</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\misc\freetype\imgui_freetype.h">
+      <Filter>Исходные файлы\imgui\include\misc\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\misc\cpp\imgui_stdlib.h">
+      <Filter>Исходные файлы\imgui\include\misc\cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_opengl3.h">
+      <Filter>Исходные файлы\imgui\include\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_opengl3_loader.h">
+      <Filter>Исходные файлы\imgui\include\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\include\backends\imgui_impl_win32.h">
+      <Filter>Исходные файлы\imgui\include\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\modules.h">
+      <Filter>Исходные файлы\src\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xorstr.hpp">
+      <Filter>Исходные файлы\src\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\visual\gui.h">
+      <Filter>Исходные файлы\src\modules\visual</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\consts.h">
+      <Filter>Исходные файлы\src\modules\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\includes.h">
+      <Filter>Исходные файлы\src\modules\other</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\exploit\FakeLagLowPoint.h">
+      <Filter>Исходные файлы\src\modules\exploit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object\object.h">
+      <Filter>Исходные файлы\src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\object\Counts.h">
+      <Filter>Исходные файлы\src\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\movement\FlyHook.h">
+      <Filter>Исходные файлы\src\modules\movement</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fgl.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fglu.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\fglut.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glew.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glsmap.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glut.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\glxew.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\tube.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\GL\wglew.h">
+      <Filter>Исходные файлы\glut\include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\browser.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\displaylist.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\gizmo.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\hslider.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\mui.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\textlist.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\uicolor.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="glut\include\mui\vslider.h">
+      <Filter>Исходные файлы\glut\include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\other\AntiScreen.h">
+      <Filter>Исходные файлы\src\modules\other</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Исходные файлы\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Исходные файлы\src\object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
