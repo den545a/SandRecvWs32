@@ -8,7 +8,7 @@ extern std::vector<std::string> packetLogs;  // Declare packetLogs as extern
 class GUI {
 public:
     static void displaySendFilterMenu();
-    static void displayCopiedPacketsMenu();
+    static void displayBlockingMenu();
     static void displayRecvFilterMenu();
     static void displaySendMenu();
     static void displayRecvMenu();

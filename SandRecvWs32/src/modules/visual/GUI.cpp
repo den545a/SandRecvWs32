@@ -13,34 +13,24 @@ extern int maxRecvPacketSize;
 extern std::vector<unsigned char> sendByteFilter;
 extern std::vector<unsigned char> recvByteFilter;
 void CopyToClipboard(const std::string& str) {
-    // Открываем буфер обмена
     if (OpenClipboard(NULL)) {
-        // Очищаем буфер обмена
         EmptyClipboard();
 
-        // Создаем глобальный объект памяти для строки
         HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, str.size() + 1);
         if (hMem) {
-            // Копируем строку в память
             memcpy(GlobalLock(hMem), str.c_str(), str.size() + 1);
             GlobalUnlock(hMem);
-
-            // Копируем данные в буфер обмена
             SetClipboardData(CF_TEXT, hMem);
         }
-
-        // Закрываем буфер обмена
         CloseClipboard();
     }
 }
 void GUI::displaySendFilterMenu() {
     ImGui::Begin("Send Packet Filter", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize);
 
-    // Send Filtering controls
     ImGui::InputInt("Min Send Packet Size", &minSendPacketSize);
     ImGui::InputInt("Max Send Packet Size", &maxSendPacketSize);
 
-    // Byte filter for Send
     static char sendByteFilterInput[128] = "";
     if (ImGui::InputText("Send Byte Filter (hex)", sendByteFilterInput, sizeof(sendByteFilterInput), ImGuiInputTextFlags_CharsHexadecimal)) {
         sendByteFilter.clear();
@@ -54,26 +44,36 @@ void GUI::displaySendFilterMenu() {
 
     ImGui::End();
 }
+void GUI::displayBlockingMenu() {
+    ImGui::Begin("Packet Blocker", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize);
 
-void GUI::displayCopiedPacketsMenu() {
-    ImGui::Begin("Copied Packets", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize);
+    static bool blockSend = false;
+    static bool blockRecv = false;
 
-    std::lock_guard<std::mutex> lock(logMutex);
-    for (size_t i = 0; i < copiedPacketLogs.size(); i++) {
-        ImGui::TextUnformatted(copiedPacketLogs[i].c_str());
+    ImGui::Checkbox("Block Send Packets", &blockSend);
+    ImGui::Checkbox("Block Recv Packets", &blockRecv);
+
+    static char blockByteFilterInput[128] = "";
+    if (ImGui::InputText("Block Byte Filter (hex)", blockByteFilterInput, sizeof(blockByteFilterInput), ImGuiInputTextFlags_CharsHexadecimal)) {
+        sendByteFilter.clear();
+        recvByteFilter.clear();
+        for (size_t i = 0; i < strlen(blockByteFilterInput); i += 2) {
+            if (i + 1 < strlen(blockByteFilterInput)) {
+                unsigned char byte = (unsigned char)strtol(blockByteFilterInput + i, nullptr, 16);
+                if (blockSend) sendByteFilter.push_back(byte);
+                if (blockRecv) recvByteFilter.push_back(byte);
+            }
+        }
     }
 
     ImGui::End();
 }
-
 void GUI::displayRecvFilterMenu() {
     ImGui::Begin("Recv Packet Filter", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_AlwaysAutoResize);
 
-    // Recv Filtering controls
     ImGui::InputInt("Min Recv Packet Size", &minRecvPacketSize);
     ImGui::InputInt("Max Recv Packet Size", &maxRecvPacketSize);
 
-    // Byte filter for Recv
     static char recvByteFilterInput[128] = "";
     if (ImGui::InputText("Recv Byte Filter (hex)", recvByteFilterInput, sizeof(recvByteFilterInput), ImGuiInputTextFlags_CharsHexadecimal)) {
         recvByteFilter.clear();
@@ -96,9 +96,7 @@ void GUI::displaySendMenu() {
         if (packetLogs[i].find("[OUT]") != std::string::npos) {
             ImGui::TextUnformatted(packetLogs[i].c_str());
 
-            // Добавляем кнопку для копирования пакета
             if (ImGui::Button(("Copy Packet " + std::to_string(i)).c_str())) {
-                // Копируем данный пакет в буфер обмена
                 CopyToClipboard(packetLogs[i]);
             }
         }
@@ -129,15 +127,14 @@ void GUI::runModule() {
     ImGui_ImplWin32_NewFrame();
     ImGui::NewFrame();
 
-    if (g_ShowMenu) { // Убедитесь, что g_ShowMenu определен, если это необходимо
-        // Показываем фильтры и логи
-        displaySendFilterMenu();  // Send filter menu
-        displayRecvFilterMenu();  // Recv filter menu
+    if (g_ShowMenu) { 
+        displaySendFilterMenu();  
+        displayRecvFilterMenu();  
 
-        // Показываем меню пакетов и меню скопированных пакетов
-        displaySendMenu();    // Send menu
-        displayRecvMenu();    // Receive menu
-        displayCopiedPacketsMenu(); // Меню для отображения скопированных пакетов
+        displaySendMenu();   
+        displayRecvMenu();    
+
+        displayBlockingMenu();
     }
 
     ImGui::Render();
